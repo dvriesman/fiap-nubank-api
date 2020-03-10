@@ -18,7 +18,17 @@ gastos de cartão de crédito por categoria.
 
 ## Para gerar o container docker
 ```
-docker build dvriesman/fiap-nubank-api:1.0 . --no-cache
+sudo docker build -t dvriesman/fiap-nubank-api
+```
+
+## Para rodar com docker
+```
+docker run --name myapp -p 8080:8080 dvriesman/fiap-nubank-api
+```
+
+## Testes da API
+```
+curl -H "Content-type:application/json" -XPOST http://localhost:8080/listSpending -d '{"username":"denny", "initialDate":"2010-01-01 00:00:00", "finalDate":"2011-02-01 00:00:00"}'
 ```
 
 
