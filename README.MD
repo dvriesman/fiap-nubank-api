@@ -1,4 +1,4 @@
-# Atividade - Pós-Graduação em Engenharia de Software
+# Atividade - FIAP - Pós-Graduação em Engenharia de Software
 
 ## Microserviço
 
@@ -30,5 +30,9 @@ docker run --name myapp -p 8080:8080 dvriesman/fiap-nubank-api
 ```
 curl -H "Content-type:application/json" -XPOST http://localhost:8080/listSpending -d '{"username":"denny", "initialDate":"2010-01-01 00:00:00", "finalDate":"2011-02-01 00:00:00"}'
 ```
+
+## Novos dados para testes.
+- Na classe Application.java, pode ser configurado novas entradas no banco de dados em memória.
+
 
 
